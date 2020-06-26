@@ -45,7 +45,19 @@
 	<p>In his free time, he surfs, skis, and champions progressive politics. He's working on how to be a better ally to underrepresented populations in the workplace. Check him out on <a href="https://www.goodreads.com/user/show/115168858-john-madeira">Goodreads</a> to see what he's reading this week.
 	<p> Raised and educated in the great state of Maine, John spent 6 years living and working in Washington, D.C. and NYC in social change and technology. He's currently living back in Maine and pretty happy about it!</p> 
 </div>
-
+<!--include jquery & backstretch-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.backstretch.min.js"></script>
+<script type="text/javascript">
+$(function(){
+     $(window).resize(function(){
+         if($(this).width() >= 767){
+             $.backstretch("Background.jpeg", {speed: 150});
+         }
+      })
+      .resize();//trigger resize on page load
+});
+</script>
 
 </body>	
 </html>
